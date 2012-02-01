@@ -23,8 +23,10 @@
 		
 		if($delimiter !== '') {
 			$from = explode($delimiter, $from);
-			$to = explode($delimiter, $to);
-			$to = count($to) <= 1 ? implode('', $to) : $to;
+			
+			if(strpos($to, $delimiter) !== FALSE) {
+				$to = explode($delimiter, $to);
+			}
 		}
 		
 		return str_replace($from, $to, parse($thing));
