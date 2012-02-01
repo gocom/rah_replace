@@ -1,28 +1,18 @@
 h1. rah_replace
 
-p. A tiny "Textpattern":http://www.textpattern.com plugin that returns contained content with all searched occurrences replaced with given replacements. This ideally works in the same way as PHP's "str_replace()":http://fi.php.net/str_replace function, but allows you to use a simple XML stylish Textpattern tag.
+p. A tiny "Textpattern":http://www.textpattern.com plugin that returns contained content with all searched occurrences replaced with given replacements. This ideally works in the same way as PHP's "str_replace":http://fi.php.net/str_replace function, but with a Textpattern's XML tag.
 
-* Version: 0.3
-* Updated: 2011/04/22 11:00 AM UTC
+h2. Basic concept
 
-h3. Table of Contents
+p. The plugin, rah_replace, comes with a tag which can be used as a container tag. The tag returns wrapped content with all found occurrences replaces with the given replacements. One tag supports multiple searches and replacements.
 
-* "Intro and description":#intro-and-description
-* "Attributes":#attributes
-* "Examples":#examples
-** "Replace a single thing with a replacement":#example-1
-** "Replace multiple things with multiple replacements":#example-2
-** "Replace multiple things with a one replacement":#example-3
-** "Use a different delimiter":#example-4
-* "Changelog":#changelog
+bc. <txp:rah_replace from="value1, value2, ..." to="value1, value2, ...">
+	Searched content
+</txp:rah_replace>
 
-h3(#intro-and-description). Intro and description
+h2. Attributes
 
-p. The plugin, rah_replace, returns contained/wrapped content with all occurrences replaces with given replacements. It supports multiple replacements and comes with a simple tag.
-
-h3(#attributes). Attributes
-
-p. The tag is a container @<txp:rah_replace>###</txp:rah_replace>@ and attributes for it follow.
+p. The tag is a container, @<txp:rah_replace>###</txp:rah_replace>@, and attributes for it follow.
 
 p. *from*
 String/thing or multiple strings that will be searched and replaced with @to@ attribute's values. Comma (or @delimiter@ value) separated if multiple.
@@ -36,50 +26,50 @@ p. *delimiter*
 Set the separator/delimiter that is used in @from@ and @to@ values to separate list of multiple values. Default is comma.
 Default: @delimiter=","@ Example: @"|"@
 
-h3(#examples). Examples
+h2. Examples
 
-h4(#example-1). Example #1: Replace a single _dog_ to a _cat_.
+h3. Replaces a _dog_ with a _cat_
 
 bc. <txp:rah_replace from="dog" to="cat">
 	My favorite animal is a dog.
 </txp:rah_replace>
 
-p. Outputs: _My favorite animal is a cat_.
+p. Returns: @My favorite animal is a cat.@
 
-h4(#example-2). Example #2: Replace multiple needles with different replacements.
+h3. Replace multiple needles with different replacements
 
 bc. <txp:rah_replace from="house,dog,Mike" to="boat,friend,wife">
 	I live in a house with my dog and Mike.
 </txp:rah_replace>
 
-p. Outputs: _I live in a boat with my friend and wife._
+p. Returns: @I live in a boat with my friend and wife.@
 
-h4(#example-3). Example #3: Replace multiple needles with a one replacement.
+h3. Replace multiple needles with a one replacement
 
 bc. <txp:rah_replace from="house,Mike,dad" to="ship">
 	Last year we build our new house with Mike, and my dad.
 </txp:rah_replace>
 
-p. Outputs: _Last year we build our new ship with ship and my ship._
+p. Returns: @Last year we build our new ship with ship and my ship.@
 
-h4(#example-4). Example #4: Use a different delimiter.
+h3. Using a different delimiter
 
 bc. <txp:rah_replace from="house|Mike,|dad" to="ship|dog.|ball" delimiter="|">
 	Last year we build our new house with Mike, and my dad.
 </txp:rah_replace>
 
-p. Outputs: _Last year we build our new ship with dog. and my ball._
+p. Returns: @Last year we build our new ship with dog. and my ball.@
 
-h3(#changelog). Changelog
+h2. Changelog
 
-p. *Version 0.3*
+h3. Version 0.3 - 2011/04/22
 
 * Performance optimization.
 
-p. *Version 0.2*
+h3. Version 0.2 - 2009/04/16
 
 * Added a new attribute: @delimiter@.
 
-p. *Version 0.1*
+h3. Version 0.1 - 2009/04/16
 
-* First release
+* Initial release.
