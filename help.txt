@@ -1,0 +1,81 @@
+h1. rah_replace
+
+p. A tiny "Textpattern":http://www.textpattern.com plugin that returns contained content with all searched occurrences replaced with given replacements. This ideally works in same way as PHP's "str_replace()":http://fi.php.net/str_replace function, but allows you to use a simple XHTML stylish Textpattern tag.
+
+* Version: 0.2
+* Updated: 2009/04/16 4:30 PM GMT+3
+
+h3. Table of Contents
+
+* "Intro and description":#intro-and-description
+* "Attributes":#attributes
+* "Examples":#examples
+** "Replace a single thing with a replacement":#example-1
+** "Replace multiple things with multiple replacements":#example-2
+** "Replace multiple things with a one replacement":#example-3
+** "Use a different delimiter":#example-4
+* "Changelog":#changelog
+
+h3(#intro-and-description). Intro and description
+
+p. The plugin, rah_replace, returns contained/wrapped content with all occurances replaces with given replacements. It supports multiple replacemens and comes with a simple tag.
+
+h3(#attributes). Attributes
+
+p. The tag is a container @<txp:rah_replace>###</txp:rah_replace>@ and attributes follow.
+
+p. *from*
+String/thing or multiple strings that will be searched and replaced with @to@ attribute's values. Comma (or @delimiter@ value) seperated if multiple.
+Default: @from=""@ Example: @"dog,cat,house"@
+
+p. *to*
+Replacement or multiple replacements that will be used to replace @from@ attribute's occurances. Comma (or @delimiter@ value) seperated if multiple.
+Default: @to=""@ Example: @"ship,home,hat"@
+
+p. *delimiter*
+Set the seperator/delimiter that is used in @from@ and @to@ values to seperate multiple needles/replacements. Default is comma.
+Default: @delimiter=","@ Example: @"|"@
+
+h3(#examples). Examples
+
+h4(#example-1). Example #1: Replace a single _dog_ to a _cat_.
+
+bc. <txp:rah_replace from="dog" to="cat">
+	My favorite animal is a dog.
+</txp:rah_replace>
+
+p. Outputs: _My favorite animal is a cat_.
+
+h4(#example-2). Example #2: Replace multiple words with multiple replacements.
+
+bc. <txp:rah_replace from="house,dog,Mike" to="boat,friend,wife">
+	I live in a house with my dog and Mike.
+</txp:rah_replace>
+
+p. Outputs: _I live in a boat with my friend and wife._
+
+h4(#example-3). Example #3: Replace multiple words with a one replacement.
+
+bc. <txp:rah_replace from="house,Mike,dad" to="ship">
+	Last year we build our new house with Mike, and my dad.
+</txp:rah_replace>
+
+p. Outputs: _Last year we build our new ship with ship and my ship._
+
+h4(#example-4). Example #4: Use a different delimiter.
+
+bc. <txp:rah_replace from="house|Mike,|dad" to="ship|dog.|ball" delimiter="|">
+	Last year we build our new house with Mike, and my dad.
+</txp:rah_replace>
+
+p. Ouputs: _Last year we build our new ship with dog. and my ball._
+
+h3(#changelog). Changelog
+
+p. *Version 0.2*
+
+* Added a new attribute: @delimiter@.
+
+p. *Version 0.1*
+
+* First release
