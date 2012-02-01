@@ -1,26 +1,32 @@
-<?php	##################
-	#
-	#	rah_replace-plugin for Textpattern
-	#	version 0.3
-	#	by Jukka Svahn
-	#	http://rahforum.biz
-	#
-	###################
+<?php
 
-	function rah_replace($atts,$thing) {
+/**
+ * Rah_replace plugin for Textpattern CMS
+ *
+ * @author Jukka Svahn
+ * @date 2009-
+ * @license GNU GPLv2
+ * @link http://rahforum.biz/plugins/rah_replace
+ *
+ * Copyright (C) 2012 Jukka Svahn <http://rahforum.biz>
+ * Licensed under GNU Genral Public License version 2
+ * http://www.gnu.org/licenses/gpl-2.0.html
+ */
+
+	function rah_replace($atts, $thing) {
 		
 		extract(lAtts(array(
 			'from' => '',
 			'to' => '',
 			'delimiter' => ','
-		),$atts));
+		), $atts));
 		
 		if($delimiter !== '') {
-			$from = explode($delimiter,$from);
-			$to = explode($delimiter,$to);
-			$to = count($to) <= 1 ? implode('',$to) : $to;
+			$from = explode($delimiter, $from);
+			$to = explode($delimiter, $to);
+			$to = count($to) <= 1 ? implode('', $to) : $to;
 		}
 		
-		return str_replace($from,$to,parse($thing));
+		return str_replace($from, $to, parse($thing));
 	}
 ?>
