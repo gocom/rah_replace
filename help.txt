@@ -1,9 +1,9 @@
 h1. rah_replace
 
-p. A tiny "Textpattern":http://www.textpattern.com plugin that returns contained content with all searched occurrences replaced with given replacements. This ideally works in same way as PHP's "str_replace()":http://fi.php.net/str_replace function, but allows you to use a simple XHTML stylish Textpattern tag.
+p. A tiny "Textpattern":http://www.textpattern.com plugin that returns contained content with all searched occurrences replaced with given replacements. This ideally works in the same way as PHP's "str_replace()":http://fi.php.net/str_replace function, but allows you to use a simple XML stylish Textpattern tag.
 
-* Version: 0.2
-* Updated: 2009/04/16 4:30 PM GMT+3
+* Version: 0.3
+* Updated: 2011/04/22 11:00 AM UTC
 
 h3. Table of Contents
 
@@ -18,22 +18,22 @@ h3. Table of Contents
 
 h3(#intro-and-description). Intro and description
 
-p. The plugin, rah_replace, returns contained/wrapped content with all occurances replaces with given replacements. It supports multiple replacemens and comes with a simple tag.
+p. The plugin, rah_replace, returns contained/wrapped content with all occurrences replaces with given replacements. It supports multiple replacements and comes with a simple tag.
 
 h3(#attributes). Attributes
 
-p. The tag is a container @<txp:rah_replace>###</txp:rah_replace>@ and attributes follow.
+p. The tag is a container @<txp:rah_replace>###</txp:rah_replace>@ and attributes for it follow.
 
 p. *from*
-String/thing or multiple strings that will be searched and replaced with @to@ attribute's values. Comma (or @delimiter@ value) seperated if multiple.
+String/thing or multiple strings that will be searched and replaced with @to@ attribute's values. Comma (or @delimiter@ value) separated if multiple.
 Default: @from=""@ Example: @"dog,cat,house"@
 
 p. *to*
-Replacement or multiple replacements that will be used to replace @from@ attribute's occurances. Comma (or @delimiter@ value) seperated if multiple.
+Replacement or multiple replacements that will be used to replace @from@ attribute's occurrences. Comma (or @delimiter@ value) separated if multiple.
 Default: @to=""@ Example: @"ship,home,hat"@
 
 p. *delimiter*
-Set the seperator/delimiter that is used in @from@ and @to@ values to seperate multiple needles/replacements. Default is comma.
+Set the separator/delimiter that is used in @from@ and @to@ values to separate list of multiple values. Default is comma.
 Default: @delimiter=","@ Example: @"|"@
 
 h3(#examples). Examples
@@ -46,7 +46,7 @@ bc. <txp:rah_replace from="dog" to="cat">
 
 p. Outputs: _My favorite animal is a cat_.
 
-h4(#example-2). Example #2: Replace multiple words with multiple replacements.
+h4(#example-2). Example #2: Replace multiple needles with different replacements.
 
 bc. <txp:rah_replace from="house,dog,Mike" to="boat,friend,wife">
 	I live in a house with my dog and Mike.
@@ -54,7 +54,7 @@ bc. <txp:rah_replace from="house,dog,Mike" to="boat,friend,wife">
 
 p. Outputs: _I live in a boat with my friend and wife._
 
-h4(#example-3). Example #3: Replace multiple words with a one replacement.
+h4(#example-3). Example #3: Replace multiple needles with a one replacement.
 
 bc. <txp:rah_replace from="house,Mike,dad" to="ship">
 	Last year we build our new house with Mike, and my dad.
@@ -68,9 +68,13 @@ bc. <txp:rah_replace from="house|Mike,|dad" to="ship|dog.|ball" delimiter="|">
 	Last year we build our new house with Mike, and my dad.
 </txp:rah_replace>
 
-p. Ouputs: _Last year we build our new ship with dog. and my ball._
+p. Outputs: _Last year we build our new ship with dog. and my ball._
 
 h3(#changelog). Changelog
+
+p. *Version 0.3*
+
+* Performance optimization.
 
 p. *Version 0.2*
 
