@@ -1,6 +1,6 @@
 h1. rah_replace
 
-p. A tiny "Textpattern":http://www.textpattern.com plugin that returns contained content with all searched occurrences replaced with given replacements. This ideally works in the same way as PHP's "str_replace":http://fi.php.net/str_replace function, but with a Textpattern's XML tag.
+p. A tiny "Textpattern":http://www.textpattern.com plugin that returns contained content with all searched occurrences replaced with given replacements. This ideally works in the same way as PHP's "str_replace":http://php.net/manual/en/function.str-replace.php function, but with a Textpattern's XML tag.
 
 h2. Basic concept
 
@@ -55,12 +55,16 @@ p. Returns: @Last year we build our new ship with ship and my ship.@
 h3. Using a different delimiter
 
 bc. <txp:rah_replace from="house|Mike,|dad" to="ship|dog.|ball" delimiter="|">
-	Last year we build our new house with Mike, and my dad.
+	Last year we built our new house with Mike, and my dad.
 </txp:rah_replace>
 
-p. Returns: @Last year we build our new ship with dog. and my ball.@
+p. Returns: @Last year we built our new ship with dog. and my ball.@
 
 h2. Changelog
+
+h3. Version 0.4 - upcoming
+
+* Performance optimization.
 
 h3. Version 0.3 - 2011/04/22
 
