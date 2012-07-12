@@ -46,19 +46,21 @@ p. Returns: @I live in a boat with my friend and wife.@
 
 h3. Replace multiple needles with a one replacement
 
-bc. <txp:rah_replace from="house,Mike,dad" to="ship">
-	Last year we build our new house with Mike, and my dad.
+bc. <txp:rah_replace from="Mike,dad" to="I">
+	I remember when dad and Mike did go fishing.
 </txp:rah_replace>
 
-p. Returns: @Last year we build our new ship with ship and my ship.@
+p. Returns: @I remember when I and I did go fishing.@
 
 h3. Using a different delimiter
 
-bc. <txp:rah_replace from="house|Mike,|dad" to="ship|dog.|ball" delimiter="|">
-	Last year we built our new house with Mike, and my dad.
+p. By default any comma is treated as a delimiter and can not be used as actual value. To use comma (@,@) as a needle or replacement, you would have to change the delimiter to something else. Like for instance to vertical bar:
+
+bc. <txp:rah_replace from=".|," to="!" delimiter="|">
+	A, B, C.
 </txp:rah_replace>
 
-p. Returns: @Last year we built our new ship with dog. and my ball.@
+p. Returns: @A! B! C!@
 
 h2. Changelog
 
