@@ -33,4 +33,3 @@
 
 		return str_replace($from, $to, parse($thing));
 	}
-?>
