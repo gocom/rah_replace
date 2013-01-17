@@ -13,22 +13,24 @@
  * http://www.gnu.org/licenses/gpl-2.0.html
  */
 
-	function rah_replace($atts, $thing) {
-		
+	function rah_replace($atts, $thing)
+	{
 		extract(lAtts(array(
-			'from' => '',
-			'to' => '',
+			'from'      => '',
+			'to'        => '',
 			'delimiter' => ','
 		), $atts));
-		
-		if($delimiter !== '') {
+
+		if ($delimiter !== '')
+		{
 			$from = explode($delimiter, $from);
-			
-			if(strpos($to, $delimiter) !== FALSE) {
+
+			if (strpos($to, $delimiter) !== false)
+			{
 				$to = explode($delimiter, $to);
 			}
 		}
-		
+
 		return str_replace($from, $to, parse($thing));
 	}
 ?>
