@@ -64,6 +64,10 @@ p. Returns: @A! B! C!@
 
 h2. Changelog
 
+h3. Version 0.4.1 - upcoming
+
+* Minor clean up.
+
 h3. Version 0.4 - 2012/07/12
 
 * Performance optimization.
