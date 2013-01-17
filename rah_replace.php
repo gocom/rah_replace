@@ -18,7 +18,7 @@
 		extract(lAtts(array(
 			'from'      => '',
 			'to'        => '',
-			'delimiter' => ','
+			'delimiter' => ',',
 		), $atts));
 
 		if ($delimiter !== '')
