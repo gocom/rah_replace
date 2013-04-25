@@ -3,7 +3,7 @@
 /**
  * Rah_replace plugin for Textpattern CMS.
  *
- * @author Jukka Svahn
+ * @author  Jukka Svahn
  * @date    2009-
  * @license GNU GPLv2
  * @link    http://rahforum.biz/plugins/rah_replace
