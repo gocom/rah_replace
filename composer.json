@@ -1,0 +1,21 @@
+{
+	"name": "rah/rah_replace",
+	"description": "Search and replace plugin for Textpattern",
+	"keywords": ["textpattern"],
+	"homepage": "https://rahforum.biz/plugins/rah_replace",
+	"license": "GPL-2.0",
+	"authors": [
+		{
+			"name": "Jukka Svahn",
+			"homepage": "http://rahforum.biz",
+			"role": "Developer"
+		}
+	],
+	"support": {
+		"issues": "https://github.com/gocom/rah_replace/issues",
+		"source": "https://github.com/gocom/rah_replace"
+	},
+	"autoload": {
+		"files": []
+	}
+}
