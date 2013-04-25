@@ -13,7 +13,7 @@
  * http://www.gnu.org/licenses/gpl-2.0.html
  */
 
-	function rah_replace($atts, $thing)
+	function rah_replace($atts, $thing = '')
 	{
 		extract(lAtts(array(
 			'from'      => '',
