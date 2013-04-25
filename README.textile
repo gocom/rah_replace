@@ -64,7 +64,7 @@ p. Returns: @A! B! C!@
 
 h2. Changelog
 
-h3. Version 0.4.1 - upcoming
+h3. Version 0.4.1 - 2013/04/25
 
 * Minor clean up.
 * Released as a "Composer package":https://packagist.org/packages/rah/rah_replace.
