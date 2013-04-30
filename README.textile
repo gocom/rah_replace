@@ -1,6 +1,6 @@
 h1. rah_replace
 
-p. A tiny "Textpattern":http://www.textpattern.com plugin that returns contained content with all searched occurrences replaced with given replacements. This ideally works in the same manner as PHP's "str_replace":http://php.net/manual/en/function.str-replace.php function, but with a Textpattern's XML tag.
+p. A tiny "Textpattern":http://www.textpattern.com plugin that returns contained content with all searched occurrences replaced with given replacements. This ideally works in the same manner as PHP's "str_replace":http://php.net/manual/en/function.str-replace.php function, but with a safe and clean Textpattern template language tag.
 
 h2. Basics
 
