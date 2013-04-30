@@ -4,6 +4,7 @@
 	"keywords": ["textpattern"],
 	"homepage": "https://rahforum.biz/plugins/rah_replace",
 	"license": "GPL-2.0",
+	"type": "textpattern-plugin",
 	"authors": [
 		{
 			"name": "Jukka Svahn",
@@ -17,5 +18,8 @@
 	},
 	"autoload": {
 		"files": []
+	},
+	"require": {
+		"rah/textpattern-plugin-installer": "*@dev"
 	}
 }
