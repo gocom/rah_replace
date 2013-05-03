@@ -20,6 +20,7 @@
 		"files": []
 	},
 	"require": {
-		"rah/textpattern-plugin-installer": "*@dev"
+		"rah/textpattern-plugin-installer": "*@dev",
+		"textpattern/lock": ">=4.0.7"
 	}
 }
