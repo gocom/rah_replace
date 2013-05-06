@@ -14,6 +14,7 @@
 	],
 	"support": {
 		"issues": "https://github.com/gocom/rah_replace/issues",
+		"forum": "http://forum.textpattern.com/viewtopic.php?id=30447",
 		"source": "https://github.com/gocom/rah_replace"
 	},
 	"require": {
