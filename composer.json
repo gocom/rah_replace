@@ -16,11 +16,8 @@
 		"issues": "https://github.com/gocom/rah_replace/issues",
 		"source": "https://github.com/gocom/rah_replace"
 	},
-	"autoload": {
-		"files": []
-	},
 	"require": {
-		"textpattern/installer": "*@dev",
+		"textpattern/installer": "*",
 		"textpattern/lock": ">=4.0.7"
 	}
 }
