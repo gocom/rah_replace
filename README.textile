@@ -1,5 +1,7 @@
 h1. rah_replace
 
+p. "Project page":http://rahforum.biz/plugins/rah_replace | "Packagist":https://packagist.org/packages/rah/rah_replace | "Twitter":http://twitter.com/gocom | "GitHub":https://github.com/gocom/rah_replace | "Support forum":http://forum.textpattern.com/viewtopic.php?id=30447 | "Donate":http://rahforum.biz/donate/rah_replace
+
 p. A tiny "Textpattern":http://www.textpattern.com plugin that returns contained content with all searched occurrences replaced with given replacements. This ideally works in the same manner as PHP's "str_replace":http://php.net/manual/en/function.str-replace.php function, but with a safe and clean Textpattern template language tag.
 
 h2. Basics
