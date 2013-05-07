@@ -12,6 +12,12 @@ bc. <txp:rah_replace from="value1, value2, ..." to="value1, value2, ...">
 	Searched content
 </txp:rah_replace>
 
+h2. Installing
+
+p. Using "Composer":http://getcomposer.org:
+
+bc. $ composer.phar require rah/rah_replace
+
 h2. Attributes
 
 p. The tag is a container, @<txp:rah_replace> ...contained statement... </txp:rah_replace>@, and attributes for it follow.
