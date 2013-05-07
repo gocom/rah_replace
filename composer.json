@@ -1,7 +1,7 @@
 {
 	"name": "rah/rah_replace",
 	"description": "Search and replace plugin for Textpattern",
-	"keywords": ["textpattern"],
+	"keywords": ["textpattern", "plugin", "search", "replace"],
 	"homepage": "https://rahforum.biz/plugins/rah_replace",
 	"license": "GPL-2.0",
 	"type": "textpattern-plugin",
