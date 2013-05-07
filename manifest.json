@@ -1,7 +1,7 @@
 {
 	"name"        : "rah_replace",
 	"description" : "Search and replace",
-	"version"     : "0.4.1",
+	"version"     : "0.4.2",
 	"type"        : 0,
 	"author"      : "Jukka Svahn",
 	"author_uri"  : "http://rahforum.biz",

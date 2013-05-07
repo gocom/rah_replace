@@ -72,6 +72,10 @@ p. Returns: @A! B! C!@
 
 h2. Changelog
 
+h3. Version 0.4.2 - 2013/05/07
+
+* The Composer package uses "textpattern/installer":https://packagist.org/packages/textpattern/installer and "textpattern/lock":https://packagist.org/packages/textpattern/installer.
+
 h3. Version 0.4.1 - 2013/04/25
 
 * Minor clean up.
