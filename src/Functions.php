@@ -30,11 +30,11 @@
  */
 function rah_replace($atts, $thing = '')
 {
-    extract(lAtts(array(
-        'from'      => '',
-        'to'        => '',
+    extract(lAtts([
+        'from' => '',
+        'to' => '',
         'delimiter' => ',',
-    ), $atts));
+    ], $atts));
 
     if ($delimiter !== '') {
         $from = explode($delimiter, $from);
