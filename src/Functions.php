@@ -30,19 +30,19 @@
  */
 function rah_replace($atts, $thing = '')
 {
-	extract(lAtts(array(
-		'from'      => '',
-		'to'        => '',
-		'delimiter' => ',',
-	), $atts));
+    extract(lAtts(array(
+        'from'      => '',
+        'to'        => '',
+        'delimiter' => ',',
+    ), $atts));
 
-	if ($delimiter !== '') {
-		$from = explode($delimiter, $from);
+    if ($delimiter !== '') {
+        $from = explode($delimiter, $from);
 
-		if (strpos($to, $delimiter) !== false) {
-			$to = explode($delimiter, $to);
-		}
-	}
+        if (strpos($to, $delimiter) !== false) {
+            $to = explode($delimiter, $to);
+        }
+    }
 
-	return str_replace($from, $to, parse($thing));
+    return str_replace($from, $to, parse($thing));
 }
