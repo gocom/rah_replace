@@ -2,7 +2,7 @@ h1. rah_replace
 
 "Packagist":https://packagist.org/packages/rah/rah_replace | "Issues":https://github.com/gocom/rah_replace/issues | "Donate":https://rahforum.biz/donate/rah_replace
 
-A tiny "Textpattern":https://www.textpattern.com plugin that returns contained content with all searched occurrences replaced with given replacements. This works in the same manner as PHP's "str_replace":http://php.net/manual/en/function.str-replace.php function, but with a safe and clean Textpattern template language tag.
+A tiny "Textpattern":https://www.textpattern.com plugin that returns contained content with all searched occurrences replaced with given replacements. This works in the same manner as PHP's "str_replace":https://secure.php.net/manual/en/function.str-replace.php function, but with a safe and clean Textpattern template language tag.
 
 h2. Basics
 
@@ -16,7 +16,7 @@ h2. Installing
 
 Using "Composer":https://getcomposer.org:
 
-bc. $ composer.phar require rah/rah_replace
+bc. $ composer require rah/rah_replace
 
 h2. Attributes
 
