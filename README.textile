@@ -12,7 +12,7 @@ bc. <txp:rah_replace from="value1, value2, ..." to="value1, value2, ...">
     Searched content
 </txp:rah_replace>
 
-h2. Installing
+h2. Install
 
 Using "Composer":https://getcomposer.org:
 
