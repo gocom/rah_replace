@@ -1,36 +1,40 @@
 h1. rah_replace
 
-p. "Project page":http://rahforum.biz/plugins/rah_replace | "Packagist":https://packagist.org/packages/rah/rah_replace | "Twitter":http://twitter.com/gocom | "GitHub":https://github.com/gocom/rah_replace | "Support forum":http://forum.textpattern.com/viewtopic.php?id=30447 | "Donate":http://rahforum.biz/donate/rah_replace
+"Packagist":https://packagist.org/packages/rah/rah_replace | "Issues":https://github.com/gocom/rah_replace/issues | "Donate":https://rahforum.biz/donate/rah_replace
 
-p. A tiny "Textpattern":http://www.textpattern.com plugin that returns contained content with all searched occurrences replaced with given replacements. This ideally works in the same manner as PHP's "str_replace":http://php.net/manual/en/function.str-replace.php function, but with a safe and clean Textpattern template language tag.
+A tiny "Textpattern":https://www.textpattern.com plugin that returns contained content with all searched occurrences replaced with given replacements. This works in the same manner as PHP's "str_replace":http://php.net/manual/en/function.str-replace.php function, but with a safe and clean Textpattern template language tag.
 
 h2. Basics
 
-p. The plugin, rah_replace, introduces a new container tag to Textpattern's arsenal. The tag returns wrapped content with all found occurrences replaced with given replacements. A tag supports multiple searched occurrences and replacements.
+The plugin, rah_replace, introduces a new container tag to Textpattern's arsenal. The tag returns wrapped content with all found occurrences replaced with given replacements. A tag supports multiple searched occurrences and replacements.
 
 bc. <txp:rah_replace from="value1, value2, ..." to="value1, value2, ...">
-	Searched content
+    Searched content
 </txp:rah_replace>
 
 h2. Installing
 
-p. Using "Composer":http://getcomposer.org:
+Using "Composer":https://getcomposer.org:
 
 bc. $ composer.phar require rah/rah_replace
 
 h2. Attributes
 
-p. The tag is a container, @<txp:rah_replace> ...contained statement... </txp:rah_replace>@, and attributes for it follow.
+bc. <txp:rah_replace>
+    ...contained statement...
+</txp:rah_replace>
 
-p. *from*
+The tag is a container and attributes for it follow.
+
+*from*
 Strings that will be searched and replaced with @to@ attribute's values. Separate multiple values with a comma (or @delimiter@ if changed).
 Default: @from=""@ Example: @"dog,cat,house"@
 
-p. *to*
+*to*
 Replacements that will be used to replace @from@ attribute's values. Comma (or @delimiter@) separated if multiple.
 Default: @to=""@ Example: @"ship,home,hat"@
 
-p. *delimiter*
+*delimiter*
 Sets the delimiter used in @from@ and @to@ to separate multiple values. Default is a comma.
 Default: @delimiter=","@ Example: @"|"@
 
@@ -39,38 +43,43 @@ h2. Examples
 h3. Replaces a _dog_ with a _cat_
 
 bc. <txp:rah_replace from="dog" to="cat">
-	My favorite animal is a dog.
+    My favorite animal is a dog.
 </txp:rah_replace>
 
-p. Returns: @My favorite animal is a cat.@
+Returns: @My favorite animal is a cat.@
 
 h3. Replace multiple needles with different replacements
 
 bc. <txp:rah_replace from="house,dog,Mike" to="boat,friend,wife">
-	I live in a house with my dog and Mike.
+    I live in a house with my dog and Mike.
 </txp:rah_replace>
 
-p. Returns: @I live in a boat with my friend and wife.@
+Returns: @I live in a boat with my friend and wife.@
 
 h3. Replace multiple needles with a one replacement
 
 bc. <txp:rah_replace from="Mike,dad" to="I">
-	I remember when dad and Mike did go to fishing.
+    I remember when dad and Mike did go to fishing.
 </txp:rah_replace>
 
-p. Returns: @I remember when I and I did go to fishing.@
+Returns: @I remember when I and I did go to fishing.@
 
 h3. Using a different delimiter
 
 p. By default any comma is treated as a delimiter and can not be used as actual value. To use a comma (@,@) as a needle or a replacement, you would have to change the delimiter to something else. Like for instance to a vertical bar:
 
 bc. <txp:rah_replace from=".|," to="!" delimiter="|">
-	A, B, C.
+    A, B, C.
 </txp:rah_replace>
 
-p. Returns: @A! B! C!@
+Returns: @A! B! C!@
 
 h2. Changelog
+
+h3. Version 0.5.0 - upcoming
+
+* Register the tag.
+* Now requires Textpattern 4.6.0 or newer.
 
 h3. Version 0.4.2 - 2013/05/07
 
