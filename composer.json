@@ -1,24 +1,30 @@
 {
-	"name": "rah/rah_replace",
-	"description": "Search and replace plugin for Textpattern",
-	"keywords": ["textpattern", "plugin", "search", "replace"],
-	"homepage": "https://rahforum.biz/plugins/rah_replace",
-	"license": "GPL-2.0",
-	"type": "textpattern-plugin",
-	"authors": [
-		{
-			"name": "Jukka Svahn",
-			"homepage": "http://rahforum.biz",
-			"role": "Developer"
-		}
-	],
-	"support": {
-		"issues": "https://github.com/gocom/rah_replace/issues",
-		"forum": "http://forum.textpattern.com/viewtopic.php?id=30447",
-		"source": "https://github.com/gocom/rah_replace"
-	},
-	"require": {
-		"textpattern/installer": "*",
-		"textpattern/lock": ">=4.0.7"
-	}
+    "name": "rah/rah_replace",
+    "description": "Search and replace plugin for Textpattern",
+    "keywords": ["textpattern", "plugin", "search", "replace"],
+    "homepage": "https://rahforum.biz/plugins/rah_replace",
+    "license": "GPL-2.0",
+    "type": "textpattern-plugin",
+    "authors": [
+        {
+            "name": "Jukka Svahn",
+            "homepage": "https://rahforum.biz",
+            "role": "Developer"
+        }
+    ],
+    "support": {
+        "issues": "https://github.com/gocom/rah_replace/issues",
+        "forum": "http://forum.textpattern.com/viewtopic.php?id=30447",
+        "source": "https://github.com/gocom/rah_replace"
+    },
+    "require": {
+        "textpattern/installer": "*",
+        "textpattern/lock": ">=4.0.7"
+    },
+    "require-dev": {
+        "squizlabs/php_codesniffer": "3.*"
+    },
+    "scripts": {
+        "cs": "./vendor/bin/phpcs"
+    }
 }
