@@ -1,20 +1,19 @@
 {
     "name": "rah/rah_replace",
-    "description": "Search and replace plugin for Textpattern",
+    "description": "Search and replace plugin for Textpattern CMS",
     "keywords": ["textpattern", "plugin", "search", "replace"],
-    "homepage": "https://rahforum.biz/plugins/rah_replace",
+    "homepage": "https://github.com/gocom/rah_replace",
     "license": "GPL-2.0",
     "type": "textpattern-plugin",
     "authors": [
         {
             "name": "Jukka Svahn",
-            "homepage": "https://rahforum.biz",
+            "homepage": "https://github.com/gocom",
             "role": "Developer"
         }
     ],
     "support": {
         "issues": "https://github.com/gocom/rah_replace/issues",
-        "forum": "http://forum.textpattern.com/viewtopic.php?id=30447",
         "source": "https://github.com/gocom/rah_replace"
     },
     "require": {

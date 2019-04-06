@@ -76,7 +76,7 @@ Returns: @A! B! C!@
 
 h2. Changelog
 
-h3. Version 0.5.0 - upcoming
+h3. Version 0.5.0 - 2019/04/06
 
 * Register the tag.
 * Now requires Textpattern 4.7.0 or newer.
