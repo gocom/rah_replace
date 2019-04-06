@@ -20,7 +20,7 @@
     "require": {
         "php": ">=5.6.0",
         "textpattern/installer": "*",
-        "textpattern/lock": ">=4.6.0"
+        "textpattern/lock": ">=4.7.0"
     },
     "require-dev": {
         "squizlabs/php_codesniffer": "3.*"
