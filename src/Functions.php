@@ -1,7 +1,7 @@
 <?php
 
 /*
- * rah_replace - Memcached templates for Textpattern CMS
+ * rah_replace - Search and replace for Textpattern CMS
  * https://github.com/gocom/rah_replace
  *
  * Copyright (C) 2019 Jukka Svahn
