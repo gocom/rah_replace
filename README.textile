@@ -1,6 +1,6 @@
 h1. rah_replace
 
-"Packagist":https://packagist.org/packages/rah/rah_replace | "Issues":https://github.com/gocom/rah_replace/issues | "Donate":https://rahforum.biz/donate/rah_replace
+"Download":https://github.com/gocom/rah_replace/releases | "Packagist":https://packagist.org/packages/rah/rah_replace | "Issues":https://github.com/gocom/rah_replace/issues
 
 "Textpattern CMS":https://textpattern.com template tag that returns contained content with all searched occurrences replaced with given replacements, in the same manner as PHP's "str_replace":https://secure.php.net/manual/en/function.str-replace.php function.
 
@@ -9,6 +9,8 @@ h2. Install
 Using "Composer":https://getcomposer.org:
 
 bc. $ composer require rah/rah_replace
+
+Or "download":https://github.com/gocom/rah_replace/releases an installer package.
 
 h2. Basics
 
